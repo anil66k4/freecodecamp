@@ -16,22 +16,23 @@ def calculate(list):
                 mat.var(axis=0).tolist(),
                 mat.var(axis=1).tolist(),
                 mat.var().item()],
-           'standard deviation': [
+           'standard deviation':[
                 mat.std(axis=0).tolist(),
                 mat.std(axis=1).tolist(),
                 mat.std().item() ],
-            'max': [
+            'max':[
                 mat.max(axis=0).tolist(),
                 mat.max(axis=1).tolist(),
                 mat.max().item() ],
-            'min': [
+            'min':[
                 mat.min(axis=0).tolist(),
                 mat.min(axis=1).tolist(),
                 mat.min().item() ],
-            'sum': [
+            'sum':[
                 mat.sum(axis=0).tolist(),
                 mat.sum(axis=1).tolist(),
                 mat.sum().item()]
     }
     
+
     return calculations        
